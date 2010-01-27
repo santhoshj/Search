@@ -1,0 +1,12 @@
+<h1>Search page</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="/search/" method="get">
+<select name="bundle">
+  {% for b in bundles %}
+    <option value='{{ b }}'>{{ b }}</option>
+  {% endfor %}
+</select>
+<input type="submit" value="Search" />
+</form>

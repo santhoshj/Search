@@ -1,0 +1,4 @@
+from search.s1.models import Bundle
+from django.contrib import admin
+
+admin.site.register(Bundle)
